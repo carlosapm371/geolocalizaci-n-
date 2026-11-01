@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7560150b44de2429f4d531edf4186dfc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7560150b44de2429f4d531edf4186dfc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7560150b44de2429f4d531edf4186dfc = L.map(
+                "map_7560150b44de2429f4d531edf4186dfc",
+                {
+                    center: [19.7008, -101.1844],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23c498a8c3681b2c2a2d41e6d86112f3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_23c498a8c3681b2c2a2d41e6d86112f3.addTo(map_7560150b44de2429f4d531edf4186dfc);
+        
+    
+        function geo_json_96e77154c5a253ed14191f5fe3e55024_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "opacity": 0.9, "weight": 5};
+            }
+        }
+
+        function geo_json_96e77154c5a253ed14191f5fe3e55024_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_96e77154c5a253ed14191f5fe3e55024 = L.geoJson(null, {
+                onEachFeature: geo_json_96e77154c5a253ed14191f5fe3e55024_onEachFeature,
+            
+                style: geo_json_96e77154c5a253ed14191f5fe3e55024_styler,
+            ...{
+}
+        });
+
+        function geo_json_96e77154c5a253ed14191f5fe3e55024_add (data) {
+            geo_json_96e77154c5a253ed14191f5fe3e55024
+                .addData(data);
+        }
+            geo_json_96e77154c5a253ed14191f5fe3e55024_add({"bbox": [-101.2062317, 19.6800797, -101.1845676, 19.7010022], "features": [{"bbox": [-101.1853485, 19.7006847, -101.1845676, 19.7007167], "geometry": {"coordinates": [[-101.1845676, 19.7006847], [-101.1853485, 19.7007167]], "type": "LineString"}, "id": "(1810181180, 1810181216, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 81.82704072129683, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": false, "osmid": 610619790, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1864889, 19.7007167, -101.1853485, 19.7007795], "geometry": {"coordinates": [[-101.1853485, 19.7007167], [-101.1864236, 19.7007764], [-101.1864889, 19.7007795]], "type": "LineString"}, "id": "(1810181216, 1804410290, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 119.58866532301482, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": false, "osmid": 610619790, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1869126, 19.7007795, -101.1864889, 19.7008054], "geometry": {"coordinates": [[-101.1864889, 19.7007795], [-101.1869126, 19.7008054]], "type": "LineString"}, "id": "(1804410290, 1804410278, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 44.44901565836764, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": true, "osmid": 1308464522, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1878206, 19.7008054, -101.1869126, 19.7008336], "geometry": {"coordinates": [[-101.1869126, 19.7008054], [-101.1878206, 19.7008336]], "type": "LineString"}, "id": "(1804410278, 1804410285, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 95.10692133037519, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": true, "osmid": 1308464522, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1885128, 19.7008336, -101.1878206, 19.700854], "geometry": {"coordinates": [[-101.1878206, 19.7008336], [-101.1885128, 19.700854]], "type": "LineString"}, "id": "(1804410285, 1945843385, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 72.49938285221623, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": true, "osmid": 1308464521, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1897944, 19.700854, -101.1885128, 19.7008948], "geometry": {"coordinates": [[-101.1885128, 19.700854], [-101.1897944, 19.7008948]], "type": "LineString"}, "id": "(1945843385, 1804410269, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 134.2426751108161, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": true, "osmid": 1308464521, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1904181, 19.7008948, -101.1897944, 19.7009241], "geometry": {"coordinates": [[-101.1897944, 19.7008948], [-101.1904181, 19.7009241]], "type": "LineString"}, "id": "(1804410269, 1810181162, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 65.37408052128225, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": true, "osmid": 611686850, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1914583, 19.7009241, -101.1904181, 19.7009417], "geometry": {"coordinates": [[-101.1904181, 19.7009241], [-101.1914583, 19.7009417]], "type": "LineString"}, "id": "(1810181162, 1803476362, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 108.91225870491031, "maxspeed": null, "name": "Calle Antonio Alzate", "oneway": true, "osmid": 611686850, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1923702, 19.7009417, -101.1914583, 19.7009573], "geometry": {"coordinates": [[-101.1914583, 19.7009417], [-101.1923702, 19.7009573]], "type": "LineString"}, "id": "(1803476362, 1805108153, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 95.47917265205314, "maxspeed": null, "name": "Calle La Corregidora", "oneway": true, "osmid": 169185337, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1941919, 19.7009573, -101.1923702, 19.7009889], "geometry": {"coordinates": [[-101.1923702, 19.7009573], [-101.1932639, 19.7009661], [-101.1935385, 19.700974], [-101.1941919, 19.7009889]], "type": "LineString"}, "id": "(1805108153, 1803476367, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 190.74556023850647, "maxspeed": null, "name": "Calle La Corregidora", "oneway": true, "osmid": 169185337, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1951403, 19.7009889, -101.1941919, 19.7010022], "geometry": {"coordinates": [[-101.1941919, 19.7009889], [-101.1951403, 19.7010022]], "type": "LineString"}, "id": "(1803476367, 1803476374, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 99.29544836434624, "maxspeed": null, "name": "Calle La Corregidora", "oneway": true, "osmid": 169185337, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1951762, 19.6998443, -101.1951403, 19.7010022], "geometry": {"coordinates": [[-101.1951403, 19.7010022], [-101.1951762, 19.6998443]], "type": "LineString"}, "id": "(1803476374, 1803461939, 0)", "properties": {"bridge": null, "highway": "residential", "length": 128.80762677324236, "maxspeed": null, "name": "Calle Galeana", "oneway": true, "osmid": 169184317, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1952107, 19.6987175, -101.1951762, 19.6998443], "geometry": {"coordinates": [[-101.1951762, 19.6998443], [-101.1952107, 19.6987175]], "type": "LineString"}, "id": "(1803461939, 1803461934, 0)", "properties": {"bridge": null, "highway": "residential", "length": 125.34666475519454, "maxspeed": null, "name": "Calle Galeana", "oneway": true, "osmid": 169184317, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1952683, 19.6968507, -101.1952107, 19.6987175], "geometry": {"coordinates": [[-101.1952107, 19.6987175], [-101.1952683, 19.6968507]], "type": "LineString"}, "id": "(1803461934, 1803461907, 0)", "properties": {"bridge": null, "highway": "residential", "length": 207.66654853068812, "maxspeed": null, "name": "Calle Galeana", "oneway": true, "osmid": 169184317, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1952933, 19.6966668, -101.1952683, 19.6968507], "geometry": {"coordinates": [[-101.1952683, 19.6968507], [-101.1952933, 19.6966668]], "type": "LineString"}, "id": "(1803461907, 2007181468, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 20.61558402109301, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 1317125957, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1953251, 19.6963684, -101.1952933, 19.6966668], "geometry": {"coordinates": [[-101.1952933, 19.6966668], [-101.1953251, 19.6963684]], "type": "LineString"}, "id": "(2007181468, 1805108204, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 33.34720512265871, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 1317125957, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1954677, 19.6955458, -101.1953251, 19.6963684], "geometry": {"coordinates": [[-101.1953251, 19.6963684], [-101.1953942, 19.696289], [-101.1954266, 19.6962096], [-101.1954677, 19.6955458]], "type": "LineString"}, "id": "(1805108204, 1805108214, 0)", "properties": {"bridge": null, "highway": "residential", "length": 94.80868943790831, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 832828135, "reversed": false}, "type": "Feature"}, {"bbox": [-101.195492, 19.6936564, -101.1954677, 19.6955458], "geometry": {"coordinates": [[-101.1954677, 19.6955458], [-101.1954707, 19.695366], [-101.1954734, 19.6943748], [-101.195492, 19.6936564]], "type": "LineString"}, "id": "(1805108214, 8417025773, 0)", "properties": {"bridge": null, "highway": "residential", "length": 210.11855030863836, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 182421064, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1954995, 19.6933673, -101.195492, 19.6936564], "geometry": {"coordinates": [[-101.195492, 19.6936564], [-101.1954995, 19.6933673]], "type": "LineString"}, "id": "(8417025773, 1810190588, 0)", "properties": {"bridge": null, "highway": "residential", "length": 32.15608639379934, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 182421064, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1955241, 19.6922907, -101.1954995, 19.6933673], "geometry": {"coordinates": [[-101.1954995, 19.6933673], [-101.1955241, 19.6922907]], "type": "LineString"}, "id": "(1810190588, 1930811286, 0)", "properties": {"bridge": null, "highway": "residential", "length": 119.74032674247515, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 918869598, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1955289, 19.6920127, -101.1955241, 19.6922907], "geometry": {"coordinates": [[-101.1955241, 19.6922907], [-101.195525, 19.6922469], [-101.1955283, 19.6920843], [-101.1955289, 19.6920127]], "type": "LineString"}, "id": "(1930811286, 1930811277, 0)", "properties": {"bridge": "yes", "highway": "residential", "length": 30.91669291027118, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": [918869600, 169341427, 182421062], "reversed": false}, "type": "Feature"}, {"bbox": [-101.1955406, 19.6917526, -101.1955289, 19.6920127], "geometry": {"coordinates": [[-101.1955289, 19.6920127], [-101.195529, 19.6920099], [-101.1955406, 19.6917526]], "type": "LineString"}, "id": "(1930811277, 1927698618, 0)", "properties": {"bridge": null, "highway": "residential", "length": 28.947780088970575, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 169341427, "reversed": false}, "type": "Feature"}, {"bbox": [-101.19556, 19.6911479, -101.1955406, 19.6917526], "geometry": {"coordinates": [[-101.1955406, 19.6917526], [-101.19556, 19.6911479]], "type": "LineString"}, "id": "(1927698618, 1927698613, 0)", "properties": {"bridge": null, "highway": "residential", "length": 67.27033473722187, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 1317133336, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1955913, 19.6902041, -101.19556, 19.6911479], "geometry": {"coordinates": [[-101.19556, 19.6911479], [-101.1955913, 19.6902041]], "type": "LineString"}, "id": "(1927698613, 1892094730, 0)", "properties": {"bridge": null, "highway": "residential", "length": 104.99706729962742, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 1317133336, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1956019, 19.6895446, -101.1955913, 19.6902041], "geometry": {"coordinates": [[-101.1955913, 19.6902041], [-101.1956019, 19.6895446]], "type": "LineString"}, "id": "(1892094730, 1924071180, 0)", "properties": {"bridge": null, "highway": "residential", "length": 73.34155417293037, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 922233018, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1956019, 19.6890837, -101.1956, 19.6895446], "geometry": {"coordinates": [[-101.1956019, 19.6895446], [-101.1956, 19.6890837]], "type": "LineString"}, "id": "(1924071180, 1924103638, 0)", "properties": {"bridge": null, "highway": "residential", "length": 51.25020012307272, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 922233018, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1956171, 19.6885452, -101.1956, 19.6890837], "geometry": {"coordinates": [[-101.1956, 19.6890837], [-101.1956156, 19.6885911], [-101.1956171, 19.6885452]], "type": "LineString"}, "id": "(1924103638, 1924071166, 0)", "properties": {"bridge": null, "highway": "residential", "length": 59.905311811539605, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 922233018, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1956363, 19.6880659, -101.1956171, 19.6885452], "geometry": {"coordinates": [[-101.1956171, 19.6885452], [-101.1956363, 19.6880659]], "type": "LineString"}, "id": "(1924071166, 1924074541, 0)", "properties": {"bridge": null, "highway": "residential", "length": 53.333697867084226, "maxspeed": null, "name": "Calzada Ju\u00e1rez", "oneway": true, "osmid": 1318884100, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1956587, 19.6880659, -101.1956363, 19.6880665], "geometry": {"coordinates": [[-101.1956363, 19.6880659], [-101.1956587, 19.6880665]], "type": "LineString"}, "id": "(1924074541, 8456766251, 0)", "properties": {"bridge": null, "highway": "residential", "length": 2.346110118959679, "maxspeed": null, "name": "De Constituyentes", "oneway": false, "osmid": 182068384, "reversed": false}, "type": "Feature"}, {"bbox": [-101.1959829, 19.6874819, -101.1956587, 19.6880665], "geometry": {"coordinates": [[-101.1956587, 19.6880665], [-101.1959829, 19.6874819]], "type": "LineString"}, "id": "(8456766251, 3910674443, 0)", "properties": {"bridge": null, "highway": "residential", "length": 73.33259205370477, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880009, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1971912, 19.6851289, -101.1959829, 19.6874819], "geometry": {"coordinates": [[-101.1959829, 19.6874819], [-101.1967219, 19.6860613], [-101.1969904, 19.6855279], [-101.1971912, 19.6851289]], "type": "LineString"}, "id": "(3910674443, 1900591525, 0)", "properties": {"bridge": null, "highway": "residential", "length": 290.62547688868494, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880009, "reversed": true}, "type": "Feature"}, {"bbox": [-101.197417, 19.6845927, -101.1971912, 19.6851289], "geometry": {"coordinates": [[-101.1971912, 19.6851289], [-101.1972378, 19.6850184], [-101.197417, 19.6845927]], "type": "LineString"}, "id": "(1900591525, 6629831345, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 64.13855297823685, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880010, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1977293, 19.6839411, -101.197417, 19.6845927], "geometry": {"coordinates": [[-101.197417, 19.6845927], [-101.1977293, 19.6839411]], "type": "LineString"}, "id": "(6629831345, 1900591396, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 79.49072421409923, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880010, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1977716, 19.6838531, -101.1977293, 19.6839411], "geometry": {"coordinates": [[-101.1977293, 19.6839411], [-101.1977716, 19.6838531]], "type": "LineString"}, "id": "(1900591396, 1900591400, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 10.740711997408814, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318898027, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1978879, 19.6835842, -101.1977716, 19.6838531], "geometry": {"coordinates": [[-101.1977716, 19.6838531], [-101.1978879, 19.6835842]], "type": "LineString"}, "id": "(1900591400, 1900591479, 0)", "properties": {"bridge": null, "highway": "residential", "length": 32.28458273280939, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880547, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1980405, 19.6832449, -101.1978879, 19.6835842], "geometry": {"coordinates": [[-101.1978879, 19.6835842], [-101.1980405, 19.6832449]], "type": "LineString"}, "id": "(1900591479, 1925700612, 0)", "properties": {"bridge": null, "highway": "residential", "length": 40.97193734833438, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880547, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1984492, 19.6821945, -101.1980405, 19.6832449], "geometry": {"coordinates": [[-101.1980405, 19.6832449], [-101.1982025, 19.6828285], [-101.1984492, 19.6821945]], "type": "LineString"}, "id": "(1925700612, 1947801633, 0)", "properties": {"bridge": null, "highway": "residential", "length": 124.39082519581237, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318880547, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1987018, 19.6816643, -101.1984492, 19.6821945], "geometry": {"coordinates": [[-101.1984492, 19.6821945], [-101.1987018, 19.6816643]], "type": "LineString"}, "id": "(1947801633, 1900591438, 0)", "properties": {"bridge": null, "highway": "residential", "length": 64.61582589024304, "maxspeed": "30", "name": "Calle Margarita Maza de Ju\u00e1rez", "oneway": false, "osmid": 1318905117, "reversed": true}, "type": "Feature"}, {"bbox": [-101.1989763, 19.6816643, -101.1987018, 19.6817019], "geometry": {"coordinates": [[-101.1987018, 19.6816643], [-101.1989763, 19.6817019]], "type": "LineString"}, "id": "(1900591438, 1925700626, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 29.042359935961485, "maxspeed": null, "name": "Calle Polonia", "oneway": false, "osmid": 1326055830, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2000076, 19.6817019, -101.1989763, 19.6818531], "geometry": {"coordinates": [[-101.1989763, 19.6817019], [-101.1997127, 19.6818388], [-101.1998684, 19.6818531], [-101.2000076, 19.6818492]], "type": "LineString"}, "id": "(1925700626, 1924115149, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 109.54809514183562, "maxspeed": null, "name": "Calle Polonia", "oneway": false, "osmid": 184316270, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2010685, 19.6817319, -101.2000076, 19.6818492], "geometry": {"coordinates": [[-101.2000076, 19.6818492], [-101.2010685, 19.6817319]], "type": "LineString"}, "id": "(1924115149, 6629913092, 0)", "properties": {"bridge": null, "highway": "residential", "length": 111.83814875662101, "maxspeed": null, "name": "Calle Polonia", "oneway": false, "osmid": 1325493982, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2019621, 19.6810083, -101.2010685, 19.6817319], "geometry": {"coordinates": [[-101.2010685, 19.6817319], [-101.2012605, 19.6817232], [-101.2015514, 19.6813438], [-101.2016962, 19.68121], [-101.2018238, 19.6811145], [-101.2019621, 19.6810083]], "type": "LineString"}, "id": "(6629913092, 5385009767, 0)", "properties": {"bridge": null, "highway": "residential", "length": 129.15002247503273, "maxspeed": null, "name": "Calle Polonia", "oneway": false, "osmid": [724413099, 1325493982], "reversed": false}, "type": "Feature"}, {"bbox": [-101.2021663, 19.6809365, -101.2019621, 19.6810083], "geometry": {"coordinates": [[-101.2019621, 19.6810083], [-101.2021663, 19.6809365]], "type": "LineString"}, "id": "(5385009767, 5385009764, 0)", "properties": {"bridge": null, "highway": "residential", "length": 22.821671258715423, "maxspeed": null, "name": "Calle Polonia", "oneway": false, "osmid": 724413099, "reversed": false}, "type": "Feature"}, {"bbox": [-101.202261, 19.6809068, -101.2021663, 19.6809365], "geometry": {"coordinates": [[-101.2021663, 19.6809365], [-101.202261, 19.6809068]], "type": "LineString"}, "id": "(5385009764, 5385009765, 0)", "properties": {"bridge": null, "highway": "residential", "length": 10.450564381112793, "maxspeed": null, "name": "Calle Polonia", "oneway": false, "osmid": 724413099, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2031929, 19.6804977, -101.202261, 19.6809068], "geometry": {"coordinates": [[-101.202261, 19.6809068], [-101.202902, 19.680617], [-101.2031929, 19.6804977]], "type": "LineString"}, "id": "(5385009765, 1925700632, 0)", "properties": {"bridge": null, "highway": "residential", "length": 107.66846210744862, "maxspeed": null, "name": "Polonia", "oneway": false, "osmid": 724413097, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2038345, 19.6803389, -101.2031929, 19.6804977], "geometry": {"coordinates": [[-101.2031929, 19.6804977], [-101.2032734, 19.6804447], [-101.2037025, 19.6803614], [-101.2038345, 19.6803389]], "type": "LineString"}, "id": "(1925700632, 1925700620, 0)", "properties": {"bridge": null, "highway": "residential", "length": 70.20090090928156, "maxspeed": null, "name": "Polonia", "oneway": false, "osmid": 724413106, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2038519, 19.6803389, -101.2038345, 19.6804324], "geometry": {"coordinates": [[-101.2038345, 19.6803389], [-101.2038519, 19.6804324]], "type": "LineString"}, "id": "(1925700620, 1928118275, 0)", "properties": {"bridge": null, "highway": "residential", "length": 10.55514444176927, "maxspeed": null, "name": "Calle Lisboa", "oneway": false, "osmid": 182234372, "reversed": true}, "type": "Feature"}, {"bbox": [-101.2038643, 19.6804324, -101.2038519, 19.6804991], "geometry": {"coordinates": [[-101.2038519, 19.6804324], [-101.2038643, 19.6804991]], "type": "LineString"}, "id": "(1928118275, 1925737803, 0)", "properties": {"bridge": null, "highway": "residential", "length": 7.529484607483627, "maxspeed": null, "name": "Calle Lisboa", "oneway": false, "osmid": 182234372, "reversed": true}, "type": "Feature"}, {"bbox": [-101.2043365, 19.6804131, -101.2038643, 19.6804991], "geometry": {"coordinates": [[-101.2038643, 19.6804991], [-101.203968, 19.6804793], [-101.2043365, 19.6804131]], "type": "LineString"}, "id": "(1925737803, 1925700640, 0)", "properties": {"bridge": null, "highway": "residential", "length": 50.35611067589156, "maxspeed": null, "name": "Avenida Rinc\u00f3n del Oro", "oneway": true, "osmid": 182319617, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2047686, 19.6803355, -101.2043365, 19.6804131], "geometry": {"coordinates": [[-101.2043365, 19.6804131], [-101.2047686, 19.6803355]], "type": "LineString"}, "id": "(1925700640, 1925741922, 0)", "properties": {"bridge": null, "highway": "residential", "length": 46.0562792540119, "maxspeed": null, "name": "Avenida Rinc\u00f3n del Oro", "oneway": true, "osmid": 182319617, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2052453, 19.6802773, -101.2047686, 19.6803355], "geometry": {"coordinates": [[-101.2047686, 19.6803355], [-101.2052453, 19.6802773]], "type": "LineString"}, "id": "(1925741922, 1925741927, 0)", "properties": {"bridge": null, "highway": "residential", "length": 50.32819534913156, "maxspeed": null, "name": "Avenida Rinc\u00f3n del Oro", "oneway": true, "osmid": 182319617, "reversed": false}, "type": "Feature"}, {"bbox": [-101.2062317, 19.6801675, -101.2052453, 19.6802773], "geometry": {"coordinates": [[-101.2052453, 19.6802773], [-101.2057761, 19.6801675], [-101.2059699, 19.6801675], [-101.2061036, 19.6801845], [-101.2062317, 19.6801984]], "type": "LineString"}, "id": "(1925741927, 1925783660, 0)", "properties": {"bridge": "yes", "highway": "residential", "length": 104.81706644240082, "maxspeed": null, "name": "Avenida Rinc\u00f3n del Oro", "oneway": true, "osmid": [182235000, 182319617, 182319615], "reversed": false}, "type": "Feature"}, {"bbox": [-101.2062317, 19.6800797, -101.206231, 19.6801984], "geometry": {"coordinates": [[-101.2062317, 19.6801984], [-101.206231, 19.6800797]], "type": "LineString"}, "id": "(1925783660, 1925737840, 0)", "properties": {"bridge": null, "highway": "tertiary", "length": 13.199059916333228, "maxspeed": null, "name": "Calle Rinc\u00f3n de Barranquillas", "oneway": false, "osmid": 724383638, "reversed": false}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_96e77154c5a253ed14191f5fe3e55024.addTo(map_7560150b44de2429f4d531edf4186dfc);
+        
+    
+            var marker_033a0a2c8765b719786e179d4bbd572c = L.marker(
+                [19.7008, -101.1844],
+                {
+}
+            ).addTo(map_7560150b44de2429f4d531edf4186dfc);
+        
+    
+            var icon_197802baf871d2deb22cbd90aa3e3ffc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_033a0a2c8765b719786e179d4bbd572c.bindTooltip(
+                `<div>
+                     Origen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_033a0a2c8765b719786e179d4bbd572c.setIcon(icon_197802baf871d2deb22cbd90aa3e3ffc);
+            
+    
+            var marker_fc641f1f509a7c3968b9d4be977ee3b6 = L.marker(
+                [19.68, -101.206],
+                {
+}
+            ).addTo(map_7560150b44de2429f4d531edf4186dfc);
+        
+    
+            var icon_347bad007ded1da3836f17133391bfda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fc641f1f509a7c3968b9d4be977ee3b6.bindTooltip(
+                `<div>
+                     Destino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc641f1f509a7c3968b9d4be977ee3b6.setIcon(icon_347bad007ded1da3836f17133391bfda);
+            
+</script>
+</html>
